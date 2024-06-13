@@ -1,5 +1,5 @@
 package src;
-public class Auto {
+public class Auto implements Fahrzeug{
     private String marke;
     private String modell;
     private int baujahr;
@@ -44,10 +44,12 @@ public class Auto {
         this.leistung = leistung;
     }
     
+    @Override
     public void starten() {
         System.out.println("Das Auto startet.");
     }
     
+    @Override
     public void stoppen() {
         System.out.println("Das Auto stoppt.");
     }
