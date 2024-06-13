@@ -3,23 +3,29 @@ public class Auto {
     private String marke;
     private String modell;
     private int baujahr;
+    private int leistung;
     
-    public Auto(String marke, String modell, int baujahr) {
+    public Auto(String marke, String modell, int baujahr, int leistung) {
         this.marke = marke;
         this.modell = modell;
         this.baujahr = baujahr;
+        this.leistung = leistung;
     }
     
     public String getMarke() {
-        return modell;
+        return marke;
     }
     
     public String getModell() {
-        return marke;
+        return modell;
     }
     
     public int getBaujahr() {
         return baujahr;
+    }
+
+    public int getLeistung(){
+        return leistung;
     }
     
     public void setMarke(String marke) {
@@ -32,6 +38,10 @@ public class Auto {
     
     public void setBaujahr(int baujahr) {
         this.baujahr = baujahr;
+    }
+
+    public void setLeistung(int leistung){
+        this.leistung = leistung;
     }
     
     public void starten() {
