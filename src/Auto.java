@@ -3,7 +3,7 @@ package src;
 /**
  * Die Klasse Auto erstellt ein Auto mit verschiedenen Eigenschaften wie marke, etc.
  */
-public class Auto {
+public class Auto implements Fahrzeug{
     private String marke;
     private String modell;
     private int baujahr;
@@ -100,6 +100,7 @@ public class Auto {
     /**
      * Startet das Auto und gibt eine entsprechende Nachricht auf der Konsole aus.
      */
+    @Override
     public void starten() {
         System.out.println("Das Auto startet.");
     }
@@ -107,6 +108,7 @@ public class Auto {
     /**
      * Stoppt das Auto und gibt eine entsprechende Nachricht auf der Konsole aus.
      */
+    @Override
     public void stoppen() {
         System.out.println("Das Auto stoppt.");
     }

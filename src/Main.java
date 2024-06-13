@@ -10,6 +10,8 @@ public class Main {
         auto.setMarke("Mercedes-Benz");
         auto.setModell("S-Klasse");
 
+        auto.starten();
+
         // Display the auto's information
         System.out.println("Auto Information:");
         System.out.println("Marke: " + auto.getMarke());
