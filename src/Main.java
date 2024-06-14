@@ -41,6 +41,15 @@ public class Main {
         System.out.println("Zuladung: " + lkw.getZuladung());
 
 
+
+        Motorrad motorrad = new Motorrad("Kawasaki", "Ninja", 180, 2020, "Grün");
+
+        System.out.println("\nMotorrad Information:");
+        System.out.println("Marke: " + motorrad.getMarke());
+        System.out.println("Modell: " + motorrad.getModell());
+        System.out.println("Baujahr: " + motorrad.getBaujahr());
+        System.out.println("Leistung: " + motorrad.getLeistung());
+        System.out.println("Farbe: " + motorrad.getFarbe());
    
     }
 }
