@@ -97,12 +97,12 @@ public abstract class Fahrzeug
     }
 
     /**
-     * Die Methode starten, startet ein Fahrzeug.
+     * Abstrakte Methode, soll ein Fahrzeug starten.
      */
     public abstract void starten();
 
     /**
-     * Die Methode stoppen, stoppt ein Fahrzeug.
+     * Abstrakte Methode, soll ein Fahrzeug stoppen.
      */
     public abstract void stoppen();
 }
