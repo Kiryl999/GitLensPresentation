@@ -3,11 +3,7 @@ package src;
 /**
  * Die Klasse LKW erstellt ein LKW mit verschiedenen Eigenschaften wie marke, etc.
  */
-public class LKW implements Fahrzeug{
-    private String marke;
-    private String modell;
-    private int baujahr;
-    private int leistung;
+public class LKW extends Fahrzeug{
     private int reifen;
     private double zuladung;
 
@@ -23,49 +19,11 @@ public class LKW implements Fahrzeug{
      */
     
     public LKW(String marke, String modell, int baujahr, int leistung, int reifen, double zuladung) {
-        this.marke = marke;
-        this.modell = modell;
-        this.baujahr = baujahr;
-        this.leistung = leistung;
+        super(marke, modell, baujahr, leistung);
         this.reifen = reifen;
         this.zuladung = zuladung;
     }
     
-    /**
-     * Gibt die Marke des LKWs zurück.
-     * @return marke Marke des LKWs
-     */
-    public String getMarke() {
-        return marke;
-    }
-    
-    /**
-     * Gibt das Modell des LKWs zurück.
-     *
-     * @return das Modell des LKWs
-     */
-    public String getModell() {
-        return modell;
-    }
-
-    /**
-     * Gibt das Baujahr des LKWs zurück.
-     *
-     * @return das Baujahr des LKWs
-     */
-    public int getBaujahr() {
-        return baujahr;
-    }
-
-    /**
-     * Gibt die Leistung des LKWs in PS zurück.
-     *
-     * @return die Leistung des LKWs
-     */
-
-    public int getLeistung(){
-        return leistung;
-    }
 
     /**
      * Gibt die Anzahl der Reifen des LKWs zurück.
@@ -85,43 +43,6 @@ public class LKW implements Fahrzeug{
         return zuladung;
     }
 
-
-    
-    /**
-     * Setzt die Marke des LKWs.
-     *
-     * @param marke die neue Marke des LKWs
-     */
-    public void setMarke(String marke) {
-        this.marke = marke;
-    }
-    
-    /**
-     * Setzt das Modell des LKWs.
-     *
-     * @param modell das neue Modell des LKWs
-     */
-    public void setModell(String modell) {
-        this.modell = modell;
-    }
-    
-    /**
-     * Setzt das Baujahr des LKWs.
-     *
-     * @param baujahr das neue Baujahr des LKWs
-     */
-    public void setBaujahr(int baujahr) {
-        this.baujahr = baujahr;
-    }
-
-    /**
-     * Setzt die Leistung des LKWs in PS.
-     *
-     * @param leistung die neue Leistung des LKWs
-     */
-    public void setLeistung(int leistung) {
-        this.leistung = leistung;
-    }
 
     /**
      * Setzt die Anzahl der Reifen des LKWs.

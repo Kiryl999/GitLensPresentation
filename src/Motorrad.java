@@ -2,11 +2,7 @@ package src;
 /**
  * Die Klasse Motorrad erstellt ein Motorrad mit verschiedenen Eigenschaften wie marke, etc.
  */
-public class Motorrad implements Fahrzeug{
-    private String marke;
-    private String modell;
-    private int leistung;
-    private int baujahr;
+public class Motorrad extends Fahrzeug{
     private String farbe;
 
     /**
@@ -19,48 +15,11 @@ public class Motorrad implements Fahrzeug{
      * @param farbe die Farbe des Motorrads
      */
     public Motorrad(String marke, String modell, int leistung, int baujahr, String farbe){
-        this.marke = marke;
-        this.modell = modell;
-        this.leistung = leistung;
-        this.baujahr = baujahr;
+        super(marke, modell, baujahr, leistung);
         this.farbe = farbe;
     }
 
-    /**
-     * Gibt die Marke des Motorrads zurück.
-     * @return marke Marke des Motorrads
-     */
-    public String getMarke() {
-        return marke;
-    }
     
-    /**
-     * Gibt das Modell des Motorrads zurück.
-     *
-     * @return das Modell des Motorrads
-     */
-    public String getModell() {
-        return modell;
-    }
-
-    /**
-     * Gibt das Baujahr des Motorrads zurück.
-     *
-     * @return das Baujahr des Motorrads
-     */
-    public int getBaujahr() {
-        return baujahr;
-    }
-
-    /**
-     * Gibt die Leistung des Motorrads in PS zurück.
-     *
-     * @return die Leistung des Motorrads
-     */
-
-    public int getLeistung(){
-        return leistung;
-    }
 
     /**
      * Gibt die Farbe des Motorrads zurück
@@ -72,41 +31,6 @@ public class Motorrad implements Fahrzeug{
         return farbe;
      }
     
-    /**
-     * Setzt die Marke des Motorrads.
-     *
-     * @param marke die neue Marke des Motorrads
-     */
-    public void setMarke(String marke) {
-        this.marke = marke;
-    }
-    
-    /**
-     * Setzt das Modell des Motorrads.
-     *
-     * @param modell das neue Modell des Motorrads
-     */
-    public void setModell(String modell) {
-        this.modell = modell;
-    }
-    
-    /**
-     * Setzt das Baujahr des Motorrads.
-     *
-     * @param baujahr das neue Baujahr des Motorrads
-     */
-    public void setBaujahr(int baujahr) {
-        this.baujahr = baujahr;
-    }
-
-    /**
-     * Setzt die Leistung des Motorrads in PS.
-     *
-     * @param leistung die neue Leistung des Motorrads
-     */
-    public void setLeistung(int leistung) {
-        this.leistung = leistung;
-    }
 
     /**
      * Setzt die Farbe des Motorrads.
