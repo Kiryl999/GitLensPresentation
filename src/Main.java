@@ -50,6 +50,18 @@ public class Main {
         System.out.println("Baujahr: " + motorrad.getBaujahr());
         System.out.println("Leistung: " + motorrad.getLeistung());
         System.out.println("Farbe: " + motorrad.getFarbe());
+
+
+        // Erstelle eine Instanz der B2-Klasse
+        B2 b2 = new B2("B2", 52.43, 11000, 1030, Flugzeug.Antrieb.JET, 31);
+
+        System.out.println("\nB2 Information:");
+        System.out.println("Modell: " + b2.getModell());
+        System.out.println("Spannweite: " + b2.getSpannweite());
+        System.out.println("Reichweite: " + b2.getReichweite());
+        System.out.println("Reisegeschwindigkeit: " + b2.getReiseGeschwindigkeit());
+        System.out.println("Antrieb: " + b2.getAntrieb());
+        System.out.println("Anzahl der Bomben: " + b2.getAnzahlBomben());
    
     }
 }
